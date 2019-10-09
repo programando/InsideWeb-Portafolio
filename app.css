@@ -1,0 +1,639 @@
+:root {
+    --red: #ff2e63;
+    --black: #252a34;
+    --blue: #08d9d6;
+    --blanco: #eaeaea;
+}
+
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;;
+}
+body {
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+/*** Menu de navegación 48.13       **/
+#header {
+    position: relative;
+    width: 100%;
+}
+
+.btn-menu > .fa-bars {
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999; /** Los menus deben tener un valor alto **/
+}
+
+
+.menu .logo-box {
+    margin-left: 20px;
+}
+
+
+.menu .logo-box h1 a {
+    
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.menu .list-container {
+        margin-right: 20px;
+}
+
+
+.menu .list-container .lists {
+    display: flex;
+}
+
+
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+.menu .list-container .lists li a.activo {
+    background: #ff2e63;
+    color:  #fff;
+}
+ 
+.menu .list-container .lists li a:hover {
+    background:  #ff2e63;
+    color:  #fff;
+}
+/*** Menu de navegación **/
+
+/** Img Header 57:24 **/
+.img-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('img/img (7).jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .welcome {
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header .welcome hr { 
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p {  
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-header .welcome > buttom {
+    width: 170px;
+    height: 30px;
+    background: #ff2e63;
+    color: #eaeaea;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .welcome > buttom:hover {
+    background: #08d9d6;
+}
+
+/** Img Header **/
+
+
+
+/** acerca de nosotros **/
+
+.acerca-de {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.acerca-de .info-container {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acerca-de .info-container h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #252a34;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acerca-de .info-container p {
+    text-align: justify;
+    font-size: 17px;
+    color: #252a34;
+    line-height: 25px;
+    margin: 10px 0px;
+}
+
+.acerca-de .info-container .about-galery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+}
+.acerca-de .info-container .about-galery img{
+    width:  calc(33.33% - 10px);
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.acerca-de .info-container  .about-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acerca-de .info-container  .about-more  > button {
+    width: 170px;
+    height: 40px;
+    background: #ff2e63;
+    color: #eaeaea;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.acerca-de .info-container  .about-more  > button:hover {
+    background: #08d9d6;
+}
+/** acerca de nosotros **/
+
+
+/** nuestros proyectos */
+.our-projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('img/fondo.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+
+}
+
+.our-projects .deg-background {
+    position: absolute; /** Sobrepone la image */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+
+}
+.our-projects .ejeZproject {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.our-projects .container-project {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-projects .container-project .projct-title{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.our-projects .container-project .projct-title h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.our-projects .container-project .projct-title hr{
+    background : #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.our-projects .container-project .project-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+
+.our-projects .container-project .project-img img {
+    width: calc(30% - 1rem);
+     margin: 10px;
+     object-fit: cover;
+     border-radius: 10px;
+     cursor: pointer;
+}
+/** nuestros proyectos */
+
+
+
+/* Testimonios */ 
+    .testimonios {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .testimonios .testimonios-title {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .testimonios .testimonios-title h2 {
+        font-size: 50px;
+        color: #252a34;
+        font-weight: normal ;
+        margin-bottom: 10px;
+    }
+
+    .testimonios .testimonios-title hr {
+            width: 60%;
+            margin: auto;
+            height: 2px;
+            border: none;
+            background: #252a34;
+
+    }
+
+    .testimonios .box-testimonios {
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+  
+    } 
+
+    .testimonios .box-testimonios .card-testimonio {
+        width: 45%;
+        margin: 20px;
+    }
+    .testimonios .box-testimonios .card-testimonio .card-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .testimonios .box-testimonios .card-testimonio .card-img img {
+        width: 200px;
+        height: 200px;   
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+
+
+    }
+
+    .testimonios .box-testimonios .card-testimonio  .testimonio-text {
+        width: 100%;
+        border: 2px solid var(--red);
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 200ms;
+    }
+
+    .testimonios .box-testimonios .card-testimonio  .testimonio-text  h4 {
+        color: var(--red);
+        font-weight: normal;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: 200ms;
+    }
+
+    .testimonios .box-testimonios .card-testimonio  .testimonio-text p {
+        font-size: 18px;
+        color: var(--black);
+        text-align:  justify;
+        line-height: 25px;
+        transition: 200ms;
+    }
+
+    .testimonios .box-testimonios .card-testimonio  .testimonio-text:hover {
+        border: 2px solid var(--blue);
+
+    }
+
+    .testimonios .box-testimonios .card-testimonio  .testimonio-text:hover  h4 {
+        color: var(--blue);
+    }
+
+/* Testimonios */ 
+
+
+/** Footer */
+
+.footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url('/img/footer.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+
+.footer .deg-footer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ 
+    background: rgba(0,0,0,0.6);
+}
+
+.footer .ejeZfooter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer-content {
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+ 
+
+}
+
+.footer .footer-content .footer-title {
+     width: 50%;
+     margin: auto;
+     border: 2px solid var(--blanco);
+     padding: 10px;
+}
+
+.footer .footer-content .footer-title h2 {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.footer .footer-content .footer-title hr {
+        width: 80%;
+        margin: 10px auto;  
+}
+
+.footer .footer-content .formulario-content {
+    width: 60%;
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid var(--red);
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px;
+
+}
+
+.footer .footer-content .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .footer-content .formulario-content #formulario label {
+    text-align: center;
+    color: var(--black);
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.footer .footer-content .formulario-content #formulario input {
+    width: 90%;
+    margin: auto;
+    border: 2px solid var(--red);
+    border-radius: 24px;
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    font-size: 15px;
+    color: var(--black);
+}
+
+
+.footer .footer-content .formulario-content #formulario textarea {
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px;
+    height: 100px;
+    border: 2px solid var(--red);
+    border-radius: 24px;
+}
+
+
+.footer .footer-content .formulario-content #formulario .send button {
+    width: 150px;
+    height: 40px;
+    background: var(--red);
+    border-radius:  24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.footer .footer-content .formulario-content #formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.footer .footer-content .formulario-content #formulario .send button:hover {
+    background: #08d9d6;
+}
+
+
+.footer-text {
+    position: relative;
+    margin-top: 50px ;
+    color: #fff;
+    width: 100%;
+    text-align: center;   
+}
+
+.btn-go-top {
+    position: fixed;
+    bottom: 0px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid  var(--red);
+    background: var(--red);
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    transition: 400ms;
+    z-index: 9999;
+
+}
+
+.btn-go-top > span {
+    font-size: 30px;
+    color: var(--blanco);
+}
+
+.btn-go-top:hover {
+    border: 2px solid silver;
+    background: var(--red);
+}
+.btn-go-top:hover span {
+    color: white;
+}
+/** Footer */
+
+
+
+/** MENU RESPONSIVE  2.06 HORAS  **/
+
+@media only screen and ( max-width:900px) {
+
+    .btn-go-top {
+         bottom: 30px;
+    }
+
+    .btn-menu > .fa-bars {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    
+    .menu .list-container {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #fff;
+    }
+
+    .menu .list-container .lists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .menu .list-container .lists li {
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--red);
+        text-align: center;
+        cursor: pointer;
+    }
+    .menu .list-container .lists li a {
+        font-size: 20px;
+    }
+
+    .menu .list-container .lists li a.activo {
+        background: none;
+        color: var(--red);
+    }
+    .menu .list-container .lists li a:hover {
+        background: none;
+        color: var(--red);
+    }
+
+
+}
+
+/** MENU RESPONSIVE **/
+
